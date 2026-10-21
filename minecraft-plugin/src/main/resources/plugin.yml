@@ -1,0 +1,28 @@
+name: ZentarBridge
+version: ${project.version}
+main: com.zentarnetwork.bridge.ZentarBridgePlugin
+api-version: "1.20"
+author: ZentarNetwork
+description: ZentarNetwork Discord botu ile imzalı çift yönlü köprü
+softdepend: [PlaceholderAPI]
+
+commands:
+  dogrula:
+    description: Discord hesabını doğrulamak için kullanılır
+    usage: /dogrula <kod>
+    permission: zentarbridge.verify
+  zentarbridge:
+    description: ZentarBridge yönetim komutu
+    usage: /zentarbridge <reload|status>
+    permission: zentarbridge.admin
+
+permissions:
+  zentarbridge.verify:
+    description: /dogrula komutu
+    default: true
+  zentarbridge.admin:
+    description: Yönetim komutları
+    default: op
+  zentarbridge.maintenance.bypass:
+    description: Bakım modunda giriş yapabilir
+    default: op

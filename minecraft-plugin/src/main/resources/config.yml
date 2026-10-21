@@ -1,0 +1,23 @@
+# ZentarBridge yapılandırması
+
+bridge:
+  # Discord botunun köprü adresi (botun .env dosyasındaki MC_BRIDGE_HOST / MC_BRIDGE_PORT)
+  url: "ws://127.0.0.1:8765"
+  # Botun .env dosyasındaki MC_BRIDGE_SECRET ile AYNI olmalı (en az 32 karakter).
+  # Bu değeri kimseyle paylaşmayın. Ortam değişkeni ZENTAR_BRIDGE_SECRET tanımlıysa o kullanılır.
+  secret: "BURAYA_MC_BRIDGE_SECRET_DEGERINI_YAZIN"
+  server-name: "GenPvP"
+  status-interval-seconds: 10
+
+chat:
+  # PlaceholderAPI yüklüyse oyuncu rütbesi için kullanılacak yer tutucu (boş = rütbe gönderme)
+  rank-placeholder: "%luckperms_prefix%"
+  discord-format: "&5[Discord] &f{user}&7: &f{message}"
+  announce-format: "&5&l[Duyuru] &f{message}"
+  staff-format: "&d[Discord Yetkili] &f{from}&7: &f{message}"
+
+verify:
+  cooldown-seconds: 3
+
+maintenance:
+  kick-message: "&cSunucu bakımda. Lütfen daha sonra tekrar deneyin.\n&7discord.gg/zentarnetwork"
