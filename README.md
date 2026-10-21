@@ -1,6 +1,6 @@
 # ZentarNetwork Discord Botu
 
-`mc.zentarnetwork.com` (GenPvP) için Discord botu ve Minecraft (Paper/Spigot) köprü eklentisi.
+`Minecraft Sunucularınız için Discord botu ve Minecraft (Paper/Spigot) köprü eklentisi.
 **Web paneli yoktur.** Tüm yönetim Discord slash komutları, embed'ler, butonlar, select menüler ve modallarla yapılır.
 Dışarıya açılan tek ağ bileşeni, bot ile Minecraft eklentisi arasındaki imzalı WebSocket köprüsüdür (varsayılan olarak yalnızca `127.0.0.1`).
 
